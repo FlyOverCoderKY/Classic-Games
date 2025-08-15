@@ -3,7 +3,9 @@ builder.Services.AddRazorPages();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
 
-// PROMPT: Ask Cursor to register GameService and any required helpers with DI.
+// Register GameService and required helpers with DI
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<WebTicTacToe.Services.GameService>();
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())

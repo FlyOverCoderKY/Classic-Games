@@ -4,17 +4,88 @@
     ViewData["Title"] = "Web Tic-Tac-Toe";
 }
 
+<script>
+    (function () {
+        try {
+            var stored = localStorage.getItem('theme');
+            if (!stored) {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    stored = 'dark';
+                } else {
+                    stored = 'light';
+                }
+            }
+            document.documentElement.dataset.theme = stored;
+        } catch (e) { /* noop */ }
+    })();
+</script>
+<link rel="stylesheet" href="/css/site.css" />
+
 <h1 class="title">Web Tic-Tac-Toe (Razor Pages, Minimax)</h1>
 
-<!-- PROMPT: Ask Cursor to render a 3x3 grid as a form with buttons.
-     Each button posts back with row/col. Disable occupied squares.
-     Show current player / status / scoreboard, and actions for New Game, Rematch. -->
-
-<div class="board">
-    <!-- TODO: Students render board here with Cursor -->
+<div class="status">
+    <p>
+        <button id="theme-toggle" type="button" class="theme-toggle" aria-pressed="false" aria-label="Toggle theme">Toggle theme</button>
+    </p>
+    <p>
+        <strong>Status:</strong>
+        @{
+            var status = Model.State?.Status.ToString() ?? "";
+            if (Model.State != null && Model.State.Status == WebTicTacToe.Models.GameStatus.InProgress)
+            {
+                status = $"{Model.State.CurrentPlayer} to move";
+            }
+        }
+        @status
+    </p>
+    <p><strong>Score:</strong> X @Model.State?.Score.XWins — O @Model.State?.Score.OWins — Draws @Model.State?.Score.Draws</p>
+    <p><strong>You are:</strong> @(Model.State?.HumanIsX == true ? 'X' : 'O')</p>
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <button type="submit" formaction="?handler=NewGame&playAsX=true">New Game as X</button>
+        <button type="submit" formaction="?handler=NewGame&playAsX=false">New Game as O</button>
+        <button type="submit" formaction="?handler=Rematch">Rematch</button>
+    </form>
+    <hr />
+    <p><em>Click a square to move.</em></p>
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <div class="board-grid">
+            @for (var r = 0; r < 3; r++)
+            {
+                <div class="row">
+                @for (var c = 0; c < 3; c++)
+                {
+                    var idx = WebTicTacToe.Models.GameState.Index(r, c);
+                    var val = Model.State?.Board[idx] ?? ' ';
+                    var disabled = val != ' ' || (Model.State?.Status != WebTicTacToe.Models.GameStatus.InProgress) || (Model.State?.CurrentPlayer != (Model.State?.HumanIsX == true ? 'X' : 'O'));
+                    var display = (val == ' ') ? "&nbsp;" : val.ToString();
+                    <button type="submit" formaction="?handler=Move&row=@r&col=@c" disabled="@(disabled)">@Html.Raw(display)</button>
+                }
+                </div>
+            }
+        </div>
+    </form>
 </div>
 
-<form method="post">
-    <button type="submit" formaction="?handler=NewGame">New Game</button>
-    <button type="submit" formaction="?handler=Rematch">Rematch</button>
-</form>
+<script>
+    (function () {
+        var root = document.documentElement;
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        function setTheme(theme) {
+            root.dataset.theme = theme;
+            try { localStorage.setItem('theme', theme); } catch (e) { }
+            btn.setAttribute('aria-pressed', String(theme === 'dark'));
+            btn.textContent = (theme === 'dark') ? 'Light theme' : 'Dark theme';
+            btn.setAttribute('aria-label', (theme === 'dark') ? 'Switch to light theme' : 'Switch to dark theme');
+            btn.title = btn.textContent;
+        }
+        var current = root.dataset.theme || 'light';
+        setTheme(current);
+        btn.addEventListener('click', function () {
+            var next = (root.dataset.theme === 'dark') ? 'light' : 'dark';
+            setTheme(next);
+        });
+    })();
+</script>
