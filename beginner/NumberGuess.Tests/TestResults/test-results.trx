@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="842b47a0-965d-45de-b594-a9141212b75e" name="Nathan@DESKTOP-F37B0F0 2025-08-14 20:48:14" runUser="DESKTOP-F37B0F0\Nathan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-08-14T20:48:14.1005074-04:00" queuing="2025-08-14T20:48:14.1005079-04:00" start="2025-08-14T20:48:13.4796484-04:00" finish="2025-08-14T20:48:14.5313558-04:00" />
+  <TestSettings name="default" id="e49544f5-b208-45c9-a2a0-0e4ddf458512">
+    <Deployment runDeploymentRoot="Nathan_DESKTOP-F37B0F0_2025-08-14_20_48_14" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="e268bb39-5f85-4bbd-8e64-540eca1e7dd7" testId="716dcf8c-a0d2-c020-cf4f-73734ce528ad" testName="NumberGuess.Tests.ScoreCalculatorTests.FirstTry_ShouldBeBest(attempts: 1, range: 50)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0537978" startTime="2025-08-14T20:48:14.0711730-04:00" endTime="2025-08-14T20:48:14.0711833-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e268bb39-5f85-4bbd-8e64-540eca1e7dd7" />
+    <UnitTestResult executionId="30bc6182-038d-4326-a9ef-c5334d97acc4" testId="ed210a68-055e-e129-69ea-1a22f772147d" testName="NumberGuess.Tests.CliTests.Cli_StartsGame_AndRespectsInput" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000577" startTime="2025-08-14T20:48:14.0891158-04:00" endTime="2025-08-14T20:48:14.0891159-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="30bc6182-038d-4326-a9ef-c5334d97acc4" />
+    <UnitTestResult executionId="8e1b398f-58c3-466d-a6c1-20181ab69e98" testId="cd24b04f-d16b-d2e7-e9d3-a2f925d65fdb" testName="NumberGuess.Tests.ProgramTests.SeedParsing_ShouldAcceptInteger" computerName="DESKTOP-F37B0F0" duration="00:00:00.0362033" startTime="2025-08-14T20:48:14.4071276-04:00" endTime="2025-08-14T20:48:14.4071279-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e1b398f-58c3-466d-a6c1-20181ab69e98" />
+    <UnitTestResult executionId="49aa59fb-2e4e-4fb2-8f77-55a04c0337a6" testId="78df39b8-a58d-af2d-0faf-09ccd5fff57e" testName="NumberGuess.Tests.ProgramTests.InvalidDifficulty_ShouldPrintUsage_AndExit" computerName="DESKTOP-F37B0F0" duration="00:00:00.0265391" startTime="2025-08-14T20:48:14.3708431-04:00" endTime="2025-08-14T20:48:14.3708434-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49aa59fb-2e4e-4fb2-8f77-55a04c0337a6" />
+    <UnitTestResult executionId="d553375b-f520-4888-a64d-52046a538579" testId="a6aadb1b-35d4-98cb-3e05-39a257e58297" testName="NumberGuess.Tests.ScoreCalculatorAdditionalTests.DifficultyBonus_MakesHarderRangesScoreSlightlyBetter" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000324" startTime="2025-08-14T20:48:14.0868632-04:00" endTime="2025-08-14T20:48:14.0868632-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d553375b-f520-4888-a64d-52046a538579" />
+    <UnitTestResult executionId="1bcca0eb-56c1-4483-be4e-e0818c1b0bd0" testId="10a9bb1c-5341-9e85-8695-e8d9424a0567" testName="NumberGuess.Tests.ProgramTests.MissingSeedValue_ShouldPrintUsage_AndExit" computerName="DESKTOP-F37B0F0" duration="00:00:00.1347284" startTime="2025-08-14T20:48:14.1504291-04:00" endTime="2025-08-14T20:48:14.1504296-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1bcca0eb-56c1-4483-be4e-e0818c1b0bd0" />
+    <UnitTestResult executionId="bbafd8ff-8026-49cc-9112-3e20c384ab6a" testId="a1c69535-ce84-41c3-343c-bc82201540b1" testName="NumberGuess.Tests.CliTests.Cli_ValidSeed_ParsesAndDisplays(args: [&quot;--seed&quot;, &quot;123&quot;], expected: 123)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0019684" startTime="2025-08-14T20:48:14.0873934-04:00" endTime="2025-08-14T20:48:14.0873935-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bbafd8ff-8026-49cc-9112-3e20c384ab6a" />
+    <UnitTestResult executionId="a7f66105-c7d0-406d-94fd-70696d0a59c0" testId="9da381f1-3f0c-3a2c-0a40-de9a79126b9e" testName="NumberGuess.Tests.ScoreCalculatorTests.FirstTry_ShouldBeBest(attempts: 1, range: 500)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000049" startTime="2025-08-14T20:48:14.0757124-04:00" endTime="2025-08-14T20:48:14.0757124-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7f66105-c7d0-406d-94fd-70696d0a59c0" />
+    <UnitTestResult executionId="8ae16497-504e-4035-81f8-5fdc14dfeaa8" testId="38e4b2b9-30b4-d45e-d59e-169b632bf85b" testName="NumberGuess.Tests.CliTests.Cli_MissingSeedValue_PrintsUsage" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000548" startTime="2025-08-14T20:48:14.0892605-04:00" endTime="2025-08-14T20:48:14.0892605-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ae16497-504e-4035-81f8-5fdc14dfeaa8" />
+    <UnitTestResult executionId="7fd82bff-58c5-4834-862b-f419336d4564" testId="32412b40-cec7-0566-ffe8-198eeb18b19f" testName="NumberGuess.Tests.GameTests.Hints_ShouldReportTrendAndDirection" computerName="DESKTOP-F37B0F0" duration="00:00:00.0001825" startTime="2025-08-14T20:48:14.4088867-04:00" endTime="2025-08-14T20:48:14.4088867-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7fd82bff-58c5-4834-862b-f419336d4564" />
+    <UnitTestResult executionId="48bb43cc-e2d8-406e-b47b-cec6c201663d" testId="6e30ea4b-2a31-58cf-5516-378ece0b2c5d" testName="NumberGuess.Tests.ScoreCalculatorAdditionalTests.AttemptOrdering_IsAlwaysPreserved" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000774" startTime="2025-08-14T20:48:14.0871307-04:00" endTime="2025-08-14T20:48:14.0871308-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="48bb43cc-e2d8-406e-b47b-cec6c201663d" />
+    <UnitTestResult executionId="dc316898-2e80-413c-84f8-7a7aaede7c22" testId="fca171ca-d1b8-5581-46ab-4058674470dc" testName="NumberGuess.Tests.ProgramTests.InvalidSeed_ShouldPrintUsage_AndExit" computerName="DESKTOP-F37B0F0" duration="00:00:00.0358039" startTime="2025-08-14T20:48:14.2141858-04:00" endTime="2025-08-14T20:48:14.2141862-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc316898-2e80-413c-84f8-7a7aaede7c22" />
+    <UnitTestResult executionId="f6e32362-7ae1-4c67-b0f8-3e7b539954f3" testId="da05bb87-084b-0df6-6f74-952545935a6a" testName="NumberGuess.Tests.ProgramTests.HelpFlag_ShouldPrintUsage_AndExit" computerName="DESKTOP-F37B0F0" duration="00:00:00.0354851" startTime="2025-08-14T20:48:14.2491335-04:00" endTime="2025-08-14T20:48:14.2491339-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f6e32362-7ae1-4c67-b0f8-3e7b539954f3" />
+    <UnitTestResult executionId="db75c6f4-6a76-40fc-afd7-89f657a2b666" testId="643815e9-d90a-9836-d3bd-7b0c08f204af" testName="NumberGuess.Tests.ScoreCalculatorTests.FirstTry_ShouldBeBest(attempts: 1, range: 100)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0001537" startTime="2025-08-14T20:48:14.0754173-04:00" endTime="2025-08-14T20:48:14.0754174-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db75c6f4-6a76-40fc-afd7-89f657a2b666" />
+    <UnitTestResult executionId="2cd366b1-b011-4642-8111-68d5cd242bbc" testId="f6cb927b-e620-0cb0-54c8-dc6904f60a1e" testName="NumberGuess.Tests.CliTests.Cli_ValidDifficulty_ParsesAndDisplays(flag: &quot;--difficulty=Normal&quot;, value: null, expected: &quot;Normal&quot;)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000779" startTime="2025-08-14T20:48:14.0886571-04:00" endTime="2025-08-14T20:48:14.0886572-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2cd366b1-b011-4642-8111-68d5cd242bbc" />
+    <UnitTestResult executionId="39d5f006-b9c1-4f16-8205-a8d1c9282bfd" testId="d2167de5-a1fd-5a85-7096-00288020929d" testName="NumberGuess.Tests.CliTests.Cli_ValidDifficulty_ParsesAndDisplays(flag: &quot;--difficulty&quot;, value: &quot;Hard&quot;, expected: &quot;Hard&quot;)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000046" startTime="2025-08-14T20:48:14.0888068-04:00" endTime="2025-08-14T20:48:14.0888069-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39d5f006-b9c1-4f16-8205-a8d1c9282bfd" />
+    <UnitTestResult executionId="b5b50cde-47dd-4368-9952-85d17e6779d4" testId="30a7d6cf-2ea6-ae24-3def-3f40834737d3" testName="NumberGuess.Tests.ScoreCalculatorAdditionalTests.Guards_HandleInvalidInputs(attempts: 1, range: 1)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0001375" startTime="2025-08-14T20:48:14.0752616-04:00" endTime="2025-08-14T20:48:14.0752617-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b5b50cde-47dd-4368-9952-85d17e6779d4" />
+    <UnitTestResult executionId="512410a6-2863-4063-9f1f-758d9d32c78d" testId="d186d234-27e6-5293-abb3-7f90e0a84b59" testName="NumberGuess.Tests.CliTests.Cli_InvalidDifficulty_PrintsUsage" computerName="DESKTOP-F37B0F0" duration="00:00:00.0053994" startTime="2025-08-14T20:48:14.0872146-04:00" endTime="2025-08-14T20:48:14.0872146-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="512410a6-2863-4063-9f1f-758d9d32c78d" />
+    <UnitTestResult executionId="33eab94f-3862-4776-b516-fca2c8e87681" testId="66d6bef9-654a-9a76-3e9a-77564e21f2bb" testName="NumberGuess.Tests.GameTests.EOFInput_ShouldExitGracefully" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000304" startTime="2025-08-14T20:48:14.4083679-04:00" endTime="2025-08-14T20:48:14.4083679-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33eab94f-3862-4776-b516-fca2c8e87681" />
+    <UnitTestResult executionId="2a22d21c-5b80-4e9b-981d-122de482d43b" testId="383a0915-f64c-ecf8-6038-04e25b3fcdf2" testName="NumberGuess.Tests.ProgramTests.ValidDifficulty_ShouldStartGame_AndPrintBanner(flag: &quot;--difficulty&quot;, value: &quot;Easy&quot;)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0307759" startTime="2025-08-14T20:48:14.3442247-04:00" endTime="2025-08-14T20:48:14.3442251-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a22d21c-5b80-4e9b-981d-122de482d43b" />
+    <UnitTestResult executionId="1722aa46-cb77-4b78-853d-6ff0ecfa3a1f" testId="a6364661-d5b4-f9f5-ba0e-eca65504a2ce" testName="NumberGuess.Tests.CliTests.Cli_Help_PrintsUsage" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000450" startTime="2025-08-14T20:48:14.0877779-04:00" endTime="2025-08-14T20:48:14.0877779-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1722aa46-cb77-4b78-853d-6ff0ecfa3a1f" />
+    <UnitTestResult executionId="34e9c4ad-0213-427d-b89c-1a03a3cc16ed" testId="85271bad-f39f-f01e-6d76-78b14413eff3" testName="NumberGuess.Tests.CliTests.Cli_ValidDifficulty_ParsesAndDisplays(flag: &quot;--difficulty&quot;, value: &quot;Easy&quot;, expected: &quot;Easy&quot;)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000841" startTime="2025-08-14T20:48:14.0879028-04:00" endTime="2025-08-14T20:48:14.0879028-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34e9c4ad-0213-427d-b89c-1a03a3cc16ed" />
+    <UnitTestResult executionId="c6f80533-4be3-452f-bcbf-8448b269d3ba" testId="b8e6ab30-e650-df7a-e991-8e766c770375" testName="NumberGuess.Tests.CliTests.Cli_UnknownArg_PrintsUsage" computerName="DESKTOP-F37B0F0" duration="00:00:00.0554091" startTime="2025-08-14T20:48:14.0756443-04:00" endTime="2025-08-14T20:48:14.0756443-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6f80533-4be3-452f-bcbf-8448b269d3ba" />
+    <UnitTestResult executionId="058b7ac8-e61d-45ea-b893-70f86446bfd8" testId="49e8fbbc-3bd0-20fc-f13d-5c35022b92bb" testName="NumberGuess.Tests.CliTests.Cli_InvalidSeed_PrintsUsage" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000664" startTime="2025-08-14T20:48:14.0889433-04:00" endTime="2025-08-14T20:48:14.0889434-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="058b7ac8-e61d-45ea-b893-70f86446bfd8" />
+    <UnitTestResult executionId="315f546d-0bda-4f9d-ba8b-c83f1dbe3e95" testId="0457269f-fe94-8911-e75f-b77556a21682" testName="NumberGuess.Tests.ScoreCalculatorAdditionalTests.Guards_HandleInvalidInputs(attempts: -1, range: -5)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0537849" startTime="2025-08-14T20:48:14.0745406-04:00" endTime="2025-08-14T20:48:14.0745406-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="315f546d-0bda-4f9d-ba8b-c83f1dbe3e95" />
+    <UnitTestResult executionId="a04dfcc1-fa3e-4d77-b79b-09ccfca5a04b" testId="d5c555ed-c643-b9f3-c30a-50b8fe0643bb" testName="NumberGuess.Tests.CliTests.Cli_ValidSeed_ParsesAndDisplays(args: [&quot;--seed=456&quot;], expected: 456)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0001002" startTime="2025-08-14T20:48:14.0875225-04:00" endTime="2025-08-14T20:48:14.0875226-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a04dfcc1-fa3e-4d77-b79b-09ccfca5a04b" />
+    <UnitTestResult executionId="a5b62492-4fbf-428b-a166-f40923472116" testId="bdc822be-a951-0f9e-3378-f466621bc464" testName="NumberGuess.Tests.GameTests.FirstTryCorrect_WithSeed_NormalDifficulty" computerName="DESKTOP-F37B0F0" duration="00:00:00.0002347" startTime="2025-08-14T20:48:14.4080715-04:00" endTime="2025-08-14T20:48:14.4080716-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5b62492-4fbf-428b-a166-f40923472116" />
+    <UnitTestResult executionId="0076b093-a10a-411e-8141-3a5dbbc2e803" testId="44de4cc5-3ba3-955e-73c5-3d2a61ced5a7" testName="NumberGuess.Tests.ScoreCalculatorAdditionalTests.Guards_HandleInvalidInputs(attempts: 0, range: 0)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000026" startTime="2025-08-14T20:48:14.0755824-04:00" endTime="2025-08-14T20:48:14.0755825-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0076b093-a10a-411e-8141-3a5dbbc2e803" />
+    <UnitTestResult executionId="82f06ed8-c2e5-4c03-a15a-492c58baec2d" testId="9549bc2f-fbd5-7271-8034-c712b460538a" testName="NumberGuess.Tests.CliTests.Cli_MissingDifficultyValue_PrintsUsage" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000727" startTime="2025-08-14T20:48:14.0876437-04:00" endTime="2025-08-14T20:48:14.0876437-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82f06ed8-c2e5-4c03-a15a-492c58baec2d" />
+    <UnitTestResult executionId="548cd557-be5a-47c6-8ff7-11e99b6dd31a" testId="1a27926f-2e2a-1cfe-7f84-2a421e1c3438" testName="NumberGuess.Tests.GameTests.PlayAgain_Yes_ShouldStartNewRound" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000512" startTime="2025-08-14T20:48:14.4084872-04:00" endTime="2025-08-14T20:48:14.4084872-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="548cd557-be5a-47c6-8ff7-11e99b6dd31a" />
+    <UnitTestResult executionId="16682d89-3d0b-44e6-90b8-95d9d5a37b46" testId="10950cd0-d21e-6b5a-acc6-0d5a6ff8d977" testName="NumberGuess.Tests.ProgramTests.ValidDifficulty_ShouldStartGame_AndPrintBanner(flag: &quot;--difficulty=Normal&quot;, value: null)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0332903" startTime="2025-08-14T20:48:14.2825052-04:00" endTime="2025-08-14T20:48:14.2825055-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16682d89-3d0b-44e6-90b8-95d9d5a37b46" />
+    <UnitTestResult executionId="a3e0df9c-6eed-4fc1-b143-52f116f79297" testId="2f4f4c64-448a-f4a2-7eef-32a80775fbd3" testName="NumberGuess.Tests.ScoreCalculatorTests.FewerAttempts_ShouldYieldLowerScore" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000367" startTime="2025-08-14T20:48:14.0869564-04:00" endTime="2025-08-14T20:48:14.0869564-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3e0df9c-6eed-4fc1-b143-52f116f79297" />
+    <UnitTestResult executionId="9a9087c0-3c2d-4c49-97fa-5503f1686008" testId="2307c5e3-a973-ed9e-49fb-2f0cef3fd775" testName="NumberGuess.Tests.GameTests.InvalidAndOutOfRange_Input_ShouldPrompt" computerName="DESKTOP-F37B0F0" duration="00:00:00.0000730" startTime="2025-08-14T20:48:14.4082463-04:00" endTime="2025-08-14T20:48:14.4082463-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a9087c0-3c2d-4c49-97fa-5503f1686008" />
+    <UnitTestResult executionId="53de5e96-13cd-4d2d-9aaf-774c2b922d52" testId="fe1a66f4-611d-e714-e475-0ea3c96b010d" testName="NumberGuess.Tests.ProgramTests.UnknownArg_ShouldPrintUsage_AndExit" computerName="DESKTOP-F37B0F0" duration="00:00:00.0271529" startTime="2025-08-14T20:48:14.1776609-04:00" endTime="2025-08-14T20:48:14.1776613-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53de5e96-13cd-4d2d-9aaf-774c2b922d52" />
+    <UnitTestResult executionId="a63ef0d8-7b34-41ac-9fc5-708b1a73403c" testId="e85e6bf2-f49e-f0b5-d4e3-42f3a5051e93" testName="NumberGuess.Tests.ProgramTests.ValidDifficulty_ShouldStartGame_AndPrintBanner(flag: &quot;--difficulty&quot;, value: &quot;Hard&quot;)" computerName="DESKTOP-F37B0F0" duration="00:00:00.0307900" startTime="2025-08-14T20:48:14.3133805-04:00" endTime="2025-08-14T20:48:14.3133807-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a63ef0d8-7b34-41ac-9fc5-708b1a73403c" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="NumberGuess.Tests.ScoreCalculatorTests.FirstTry_ShouldBeBest(attempts: 1, range: 50)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="716dcf8c-a0d2-c020-cf4f-73734ce528ad">
+      <Execution id="e268bb39-5f85-4bbd-8e64-540eca1e7dd7" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ScoreCalculatorTests" name="FirstTry_ShouldBeBest" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_UnknownArg_PrintsUsage" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="b8e6ab30-e650-df7a-e991-8e766c770375">
+      <Execution id="c6f80533-4be3-452f-bcbf-8448b269d3ba" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_UnknownArg_PrintsUsage" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ProgramTests.ValidDifficulty_ShouldStartGame_AndPrintBanner(flag: &quot;--difficulty=Normal&quot;, value: null)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="10950cd0-d21e-6b5a-acc6-0d5a6ff8d977">
+      <Execution id="16682d89-3d0b-44e6-90b8-95d9d5a37b46" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ProgramTests" name="ValidDifficulty_ShouldStartGame_AndPrintBanner" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_InvalidSeed_PrintsUsage" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="49e8fbbc-3bd0-20fc-f13d-5c35022b92bb">
+      <Execution id="058b7ac8-e61d-45ea-b893-70f86446bfd8" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_InvalidSeed_PrintsUsage" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.GameTests.Hints_ShouldReportTrendAndDirection" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="32412b40-cec7-0566-ffe8-198eeb18b19f">
+      <Execution id="7fd82bff-58c5-4834-862b-f419336d4564" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.GameTests" name="Hints_ShouldReportTrendAndDirection" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_ValidDifficulty_ParsesAndDisplays(flag: &quot;--difficulty&quot;, value: &quot;Hard&quot;, expected: &quot;Hard&quot;)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="d2167de5-a1fd-5a85-7096-00288020929d">
+      <Execution id="39d5f006-b9c1-4f16-8205-a8d1c9282bfd" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_ValidDifficulty_ParsesAndDisplays" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ScoreCalculatorAdditionalTests.Guards_HandleInvalidInputs(attempts: 1, range: 1)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="30a7d6cf-2ea6-ae24-3def-3f40834737d3">
+      <Execution id="b5b50cde-47dd-4368-9952-85d17e6779d4" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ScoreCalculatorAdditionalTests" name="Guards_HandleInvalidInputs" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.GameTests.InvalidAndOutOfRange_Input_ShouldPrompt" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="2307c5e3-a973-ed9e-49fb-2f0cef3fd775">
+      <Execution id="9a9087c0-3c2d-4c49-97fa-5503f1686008" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.GameTests" name="InvalidAndOutOfRange_Input_ShouldPrompt" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ScoreCalculatorTests.FirstTry_ShouldBeBest(attempts: 1, range: 500)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="9da381f1-3f0c-3a2c-0a40-de9a79126b9e">
+      <Execution id="a7f66105-c7d0-406d-94fd-70696d0a59c0" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ScoreCalculatorTests" name="FirstTry_ShouldBeBest" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ProgramTests.MissingSeedValue_ShouldPrintUsage_AndExit" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="10a9bb1c-5341-9e85-8695-e8d9424a0567">
+      <Execution id="1bcca0eb-56c1-4483-be4e-e0818c1b0bd0" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ProgramTests" name="MissingSeedValue_ShouldPrintUsage_AndExit" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ScoreCalculatorAdditionalTests.AttemptOrdering_IsAlwaysPreserved" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="6e30ea4b-2a31-58cf-5516-378ece0b2c5d">
+      <Execution id="48bb43cc-e2d8-406e-b47b-cec6c201663d" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ScoreCalculatorAdditionalTests" name="AttemptOrdering_IsAlwaysPreserved" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_MissingSeedValue_PrintsUsage" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="38e4b2b9-30b4-d45e-d59e-169b632bf85b">
+      <Execution id="8ae16497-504e-4035-81f8-5fdc14dfeaa8" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_MissingSeedValue_PrintsUsage" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ProgramTests.SeedParsing_ShouldAcceptInteger" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="cd24b04f-d16b-d2e7-e9d3-a2f925d65fdb">
+      <Execution id="8e1b398f-58c3-466d-a6c1-20181ab69e98" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ProgramTests" name="SeedParsing_ShouldAcceptInteger" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_ValidDifficulty_ParsesAndDisplays(flag: &quot;--difficulty&quot;, value: &quot;Easy&quot;, expected: &quot;Easy&quot;)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="85271bad-f39f-f01e-6d76-78b14413eff3">
+      <Execution id="34e9c4ad-0213-427d-b89c-1a03a3cc16ed" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_ValidDifficulty_ParsesAndDisplays" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_ValidSeed_ParsesAndDisplays(args: [&quot;--seed&quot;, &quot;123&quot;], expected: 123)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="a1c69535-ce84-41c3-343c-bc82201540b1">
+      <Execution id="bbafd8ff-8026-49cc-9112-3e20c384ab6a" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_ValidSeed_ParsesAndDisplays" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_ValidDifficulty_ParsesAndDisplays(flag: &quot;--difficulty=Normal&quot;, value: null, expected: &quot;Normal&quot;)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="f6cb927b-e620-0cb0-54c8-dc6904f60a1e">
+      <Execution id="2cd366b1-b011-4642-8111-68d5cd242bbc" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_ValidDifficulty_ParsesAndDisplays" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_ValidSeed_ParsesAndDisplays(args: [&quot;--seed=456&quot;], expected: 456)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="d5c555ed-c643-b9f3-c30a-50b8fe0643bb">
+      <Execution id="a04dfcc1-fa3e-4d77-b79b-09ccfca5a04b" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_ValidSeed_ParsesAndDisplays" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_StartsGame_AndRespectsInput" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="ed210a68-055e-e129-69ea-1a22f772147d">
+      <Execution id="30bc6182-038d-4326-a9ef-c5334d97acc4" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_StartsGame_AndRespectsInput" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.GameTests.PlayAgain_Yes_ShouldStartNewRound" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="1a27926f-2e2a-1cfe-7f84-2a421e1c3438">
+      <Execution id="548cd557-be5a-47c6-8ff7-11e99b6dd31a" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.GameTests" name="PlayAgain_Yes_ShouldStartNewRound" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ScoreCalculatorAdditionalTests.Guards_HandleInvalidInputs(attempts: 0, range: 0)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="44de4cc5-3ba3-955e-73c5-3d2a61ced5a7">
+      <Execution id="0076b093-a10a-411e-8141-3a5dbbc2e803" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ScoreCalculatorAdditionalTests" name="Guards_HandleInvalidInputs" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ProgramTests.InvalidDifficulty_ShouldPrintUsage_AndExit" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="78df39b8-a58d-af2d-0faf-09ccd5fff57e">
+      <Execution id="49aa59fb-2e4e-4fb2-8f77-55a04c0337a6" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ProgramTests" name="InvalidDifficulty_ShouldPrintUsage_AndExit" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ProgramTests.HelpFlag_ShouldPrintUsage_AndExit" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="da05bb87-084b-0df6-6f74-952545935a6a">
+      <Execution id="f6e32362-7ae1-4c67-b0f8-3e7b539954f3" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ProgramTests" name="HelpFlag_ShouldPrintUsage_AndExit" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.GameTests.EOFInput_ShouldExitGracefully" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="66d6bef9-654a-9a76-3e9a-77564e21f2bb">
+      <Execution id="33eab94f-3862-4776-b516-fca2c8e87681" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.GameTests" name="EOFInput_ShouldExitGracefully" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.GameTests.FirstTryCorrect_WithSeed_NormalDifficulty" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="bdc822be-a951-0f9e-3378-f466621bc464">
+      <Execution id="a5b62492-4fbf-428b-a166-f40923472116" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.GameTests" name="FirstTryCorrect_WithSeed_NormalDifficulty" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ProgramTests.ValidDifficulty_ShouldStartGame_AndPrintBanner(flag: &quot;--difficulty&quot;, value: &quot;Easy&quot;)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="383a0915-f64c-ecf8-6038-04e25b3fcdf2">
+      <Execution id="2a22d21c-5b80-4e9b-981d-122de482d43b" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ProgramTests" name="ValidDifficulty_ShouldStartGame_AndPrintBanner" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_InvalidDifficulty_PrintsUsage" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="d186d234-27e6-5293-abb3-7f90e0a84b59">
+      <Execution id="512410a6-2863-4063-9f1f-758d9d32c78d" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_InvalidDifficulty_PrintsUsage" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_MissingDifficultyValue_PrintsUsage" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="9549bc2f-fbd5-7271-8034-c712b460538a">
+      <Execution id="82f06ed8-c2e5-4c03-a15a-492c58baec2d" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_MissingDifficultyValue_PrintsUsage" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ProgramTests.UnknownArg_ShouldPrintUsage_AndExit" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="fe1a66f4-611d-e714-e475-0ea3c96b010d">
+      <Execution id="53de5e96-13cd-4d2d-9aaf-774c2b922d52" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ProgramTests" name="UnknownArg_ShouldPrintUsage_AndExit" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ProgramTests.InvalidSeed_ShouldPrintUsage_AndExit" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="fca171ca-d1b8-5581-46ab-4058674470dc">
+      <Execution id="dc316898-2e80-413c-84f8-7a7aaede7c22" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ProgramTests" name="InvalidSeed_ShouldPrintUsage_AndExit" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ScoreCalculatorAdditionalTests.Guards_HandleInvalidInputs(attempts: -1, range: -5)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="0457269f-fe94-8911-e75f-b77556a21682">
+      <Execution id="315f546d-0bda-4f9d-ba8b-c83f1dbe3e95" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ScoreCalculatorAdditionalTests" name="Guards_HandleInvalidInputs" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ScoreCalculatorTests.FirstTry_ShouldBeBest(attempts: 1, range: 100)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="643815e9-d90a-9836-d3bd-7b0c08f204af">
+      <Execution id="db75c6f4-6a76-40fc-afd7-89f657a2b666" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ScoreCalculatorTests" name="FirstTry_ShouldBeBest" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ScoreCalculatorTests.FewerAttempts_ShouldYieldLowerScore" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="2f4f4c64-448a-f4a2-7eef-32a80775fbd3">
+      <Execution id="a3e0df9c-6eed-4fc1-b143-52f116f79297" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ScoreCalculatorTests" name="FewerAttempts_ShouldYieldLowerScore" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.CliTests.Cli_Help_PrintsUsage" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="a6364661-d5b4-f9f5-ba0e-eca65504a2ce">
+      <Execution id="1722aa46-cb77-4b78-853d-6ff0ecfa3a1f" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.CliTests" name="Cli_Help_PrintsUsage" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ProgramTests.ValidDifficulty_ShouldStartGame_AndPrintBanner(flag: &quot;--difficulty&quot;, value: &quot;Hard&quot;)" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="e85e6bf2-f49e-f0b5-d4e3-42f3a5051e93">
+      <Execution id="a63ef0d8-7b34-41ac-9fc5-708b1a73403c" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ProgramTests" name="ValidDifficulty_ShouldStartGame_AndPrintBanner" />
+    </UnitTest>
+    <UnitTest name="NumberGuess.Tests.ScoreCalculatorAdditionalTests.DifficultyBonus_MakesHarderRangesScoreSlightlyBetter" storage="c:\users\nathan\source\repos\classic-games\beginner\numberguess.tests\bin\debug\net8.0\numberguess.tests.dll" id="a6aadb1b-35d4-98cb-3e05-39a257e58297">
+      <Execution id="d553375b-f520-4888-a64d-52046a538579" />
+      <TestMethod codeBase="C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess.Tests\bin\Debug\net8.0\NumberGuess.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="NumberGuess.Tests.ScoreCalculatorAdditionalTests" name="DifficultyBonus_MakesHarderRangesScoreSlightlyBetter" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="716dcf8c-a0d2-c020-cf4f-73734ce528ad" executionId="e268bb39-5f85-4bbd-8e64-540eca1e7dd7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed210a68-055e-e129-69ea-1a22f772147d" executionId="30bc6182-038d-4326-a9ef-c5334d97acc4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd24b04f-d16b-d2e7-e9d3-a2f925d65fdb" executionId="8e1b398f-58c3-466d-a6c1-20181ab69e98" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78df39b8-a58d-af2d-0faf-09ccd5fff57e" executionId="49aa59fb-2e4e-4fb2-8f77-55a04c0337a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a6aadb1b-35d4-98cb-3e05-39a257e58297" executionId="d553375b-f520-4888-a64d-52046a538579" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10a9bb1c-5341-9e85-8695-e8d9424a0567" executionId="1bcca0eb-56c1-4483-be4e-e0818c1b0bd0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1c69535-ce84-41c3-343c-bc82201540b1" executionId="bbafd8ff-8026-49cc-9112-3e20c384ab6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9da381f1-3f0c-3a2c-0a40-de9a79126b9e" executionId="a7f66105-c7d0-406d-94fd-70696d0a59c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38e4b2b9-30b4-d45e-d59e-169b632bf85b" executionId="8ae16497-504e-4035-81f8-5fdc14dfeaa8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="32412b40-cec7-0566-ffe8-198eeb18b19f" executionId="7fd82bff-58c5-4834-862b-f419336d4564" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e30ea4b-2a31-58cf-5516-378ece0b2c5d" executionId="48bb43cc-e2d8-406e-b47b-cec6c201663d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fca171ca-d1b8-5581-46ab-4058674470dc" executionId="dc316898-2e80-413c-84f8-7a7aaede7c22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da05bb87-084b-0df6-6f74-952545935a6a" executionId="f6e32362-7ae1-4c67-b0f8-3e7b539954f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="643815e9-d90a-9836-d3bd-7b0c08f204af" executionId="db75c6f4-6a76-40fc-afd7-89f657a2b666" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f6cb927b-e620-0cb0-54c8-dc6904f60a1e" executionId="2cd366b1-b011-4642-8111-68d5cd242bbc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2167de5-a1fd-5a85-7096-00288020929d" executionId="39d5f006-b9c1-4f16-8205-a8d1c9282bfd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30a7d6cf-2ea6-ae24-3def-3f40834737d3" executionId="b5b50cde-47dd-4368-9952-85d17e6779d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d186d234-27e6-5293-abb3-7f90e0a84b59" executionId="512410a6-2863-4063-9f1f-758d9d32c78d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66d6bef9-654a-9a76-3e9a-77564e21f2bb" executionId="33eab94f-3862-4776-b516-fca2c8e87681" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="383a0915-f64c-ecf8-6038-04e25b3fcdf2" executionId="2a22d21c-5b80-4e9b-981d-122de482d43b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a6364661-d5b4-f9f5-ba0e-eca65504a2ce" executionId="1722aa46-cb77-4b78-853d-6ff0ecfa3a1f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85271bad-f39f-f01e-6d76-78b14413eff3" executionId="34e9c4ad-0213-427d-b89c-1a03a3cc16ed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b8e6ab30-e650-df7a-e991-8e766c770375" executionId="c6f80533-4be3-452f-bcbf-8448b269d3ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49e8fbbc-3bd0-20fc-f13d-5c35022b92bb" executionId="058b7ac8-e61d-45ea-b893-70f86446bfd8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0457269f-fe94-8911-e75f-b77556a21682" executionId="315f546d-0bda-4f9d-ba8b-c83f1dbe3e95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d5c555ed-c643-b9f3-c30a-50b8fe0643bb" executionId="a04dfcc1-fa3e-4d77-b79b-09ccfca5a04b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bdc822be-a951-0f9e-3378-f466621bc464" executionId="a5b62492-4fbf-428b-a166-f40923472116" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="44de4cc5-3ba3-955e-73c5-3d2a61ced5a7" executionId="0076b093-a10a-411e-8141-3a5dbbc2e803" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9549bc2f-fbd5-7271-8034-c712b460538a" executionId="82f06ed8-c2e5-4c03-a15a-492c58baec2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a27926f-2e2a-1cfe-7f84-2a421e1c3438" executionId="548cd557-be5a-47c6-8ff7-11e99b6dd31a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10950cd0-d21e-6b5a-acc6-0d5a6ff8d977" executionId="16682d89-3d0b-44e6-90b8-95d9d5a37b46" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f4f4c64-448a-f4a2-7eef-32a80775fbd3" executionId="a3e0df9c-6eed-4fc1-b143-52f116f79297" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2307c5e3-a973-ed9e-49fb-2f0cef3fd775" executionId="9a9087c0-3c2d-4c49-97fa-5503f1686008" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe1a66f4-611d-e714-e475-0ea3c96b010d" executionId="53de5e96-13cd-4d2d-9aaf-774c2b922d52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e85e6bf2-f49e-f0b5-d4e3-42f3a5051e93" executionId="a63ef0d8-7b34-41ac-9fc5-708b1a73403c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="35" executed="35" passed="35" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.7+8f2703126a (64-bit .NET 8.0.19)&#xD;
+[xUnit.net 00:00:00.03]   Discovering: NumberGuess.Tests&#xD;
+[xUnit.net 00:00:00.05]   Discovered:  NumberGuess.Tests&#xD;
+[xUnit.net 00:00:00.05]   Starting:    NumberGuess.Tests&#xD;
+[xUnit.net 00:00:00.47]   Finished:    NumberGuess.Tests&#xD;
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="DESKTOP-F37B0F0" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="DESKTOP-F37B0F0\coverage.cobertura.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>

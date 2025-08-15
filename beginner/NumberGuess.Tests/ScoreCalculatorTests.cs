@@ -8,7 +8,6 @@ public class ScoreCalculatorTests
     [Fact]
     public void FewerAttempts_ShouldYieldLowerScore()
     {
-        // PROMPT: Ask Cursor to implement Calculate() and make these tests pass.
         // Arrange
         int range = 100;
 

@@ -1,8 +1,13 @@
 namespace NumberGuess;
 
+/// <summary>
+/// Encapsulates the state and interaction loop for a single NumberGuess game session.
+/// Manages the secret number, guess validation, user feedback, and score tracking
+/// across rounds. Use <see cref="Play"/> to run the synchronous console loop.
+/// </summary>
 public class Game
 {
-    private readonly string _difficulty;
+    private readonly Difficulty _difficulty;
     private readonly Random _random;
     private int _secret;
     private int _lower;
@@ -10,46 +15,175 @@ public class Game
     private bool _running;
     private int _attempts;
     private int _bestScore = int.MaxValue;
+    private int? _previousDistance;
 
-    public Game(string difficulty, int? seed = null)
+    /// <summary>
+    /// Creates a new game with the desired difficulty and optional random seed.
+    /// </summary>
+    /// <param name="difficulty">Determines the range of the secret number.</param>
+    /// <param name="seed">Optional seed to make the game deterministic (useful for testing).</param>
+    public Game(Difficulty difficulty, int? seed = null)
     {
         _difficulty = difficulty;
         _random = seed.HasValue ? new Random(seed.Value) : new Random();
-        // PROMPT: Implement ConfigureRange() to set (_lower,_upper) for Easy(1-50), Normal(1-100), Hard(1-500).
         ConfigureRange();
         ResetSecret();
     }
 
+    /// <summary>
+    /// Picks a new secret and resets per-round state.
+    /// </summary>
     private void ResetSecret()
     {
         _secret = _random.Next(_lower, _upper + 1);
         _attempts = 0;
         _running = true;
+        _previousDistance = null;
     }
 
+    /// <summary>
+    /// Sets the inclusive bounds of the secret number based on the selected difficulty.
+    /// </summary>
     private void ConfigureRange()
     {
-        // TODO: Students: implement with Cursor.
-        // PROMPT: Implement ConfigureRange() that validates _difficulty and sets _lower/_upper accordingly.
-        // If an unknown difficulty is provided, default to Normal and print a note.
-        throw new NotImplementedException();
+        switch (_difficulty)
+        {
+            case Difficulty.Easy:
+                _lower = 1;
+                _upper = 50;
+                return;
+            case Difficulty.Normal:
+                _lower = 1;
+                _upper = 100;
+                return;
+            case Difficulty.Hard:
+                _lower = 1;
+                _upper = 500;
+                return;
+            default:
+                _lower = 1;
+                _upper = 100;
+                return;
+        }
     }
 
+    /// <summary>
+    /// Runs the interactive console loop until the user quits or declines to play again.
+    /// </summary>
     public void Play()
     {
-        // TODO: Students: implement with Cursor.
-        // PROMPT: Implement a loop that reads lines from Console, supports 'quit', validates integers,
-        // increments _attempts, prints "higher/lower", and uses a warm/colder hint from GetHint().
-        // On correct guess: compute score via ScoreCalculator.Calculate(_attempts, _upper - _lower + 1),
-        // update _bestScore, and ask to replay (y/n). If yes, ResetSecret().
-        throw new NotImplementedException();
+        Console.WriteLine($"I'm thinking of a number between {_lower} and {_upper}. Type 'quit' to exit.");
+
+        while (_running)
+        {
+            Console.Write($"Enter your guess [{_lower}-{_upper}]: ");
+            var input = Console.ReadLine();
+            if (input is null)
+            {
+                Console.WriteLine("Goodbye!");
+                _running = false;
+                break;
+            }
+
+            input = input.Trim();
+            if (input.Length == 0)
+            {
+                Console.WriteLine("Please enter a number.");
+                continue;
+            }
+
+            if (string.Equals(input, "quit", StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine("Goodbye!");
+                _running = false;
+                break;
+            }
+
+            if (!int.TryParse(input, out var guess))
+            {
+                Console.WriteLine("Invalid input. Please enter a valid integer.");
+                continue;
+            }
+
+            if (guess < _lower || guess > _upper)
+            {
+                Console.WriteLine($"Out of range. Please enter a number between {_lower} and {_upper}.");
+                continue;
+            }
+
+            _attempts++;
+
+            if (guess == _secret)
+            {
+                Console.WriteLine($"Correct! You got it in {_attempts} attempt(s).");
+
+                var rangeSize = _upper - _lower + 1;
+                int score = ScoreCalculator.Calculate(_attempts, rangeSize);
+
+                if (score < _bestScore)
+                {
+                    _bestScore = score;
+                    Console.WriteLine($"New best score: {_bestScore} (lower is better)");
+                }
+                else
+                {
+                    Console.WriteLine($"Score: {score}. Best: {_bestScore} (lower is better)");
+                }
+
+                Console.Write("Play again? (y/n): ");
+                var again = Console.ReadLine();
+                if (!string.IsNullOrWhiteSpace(again) && again.Trim().StartsWith("y", StringComparison.OrdinalIgnoreCase))
+                {
+                    ResetSecret();
+                    Console.WriteLine($"New round! Guess a number between {_lower} and {_upper}.");
+                    continue;
+                }
+
+                _running = false;
+                Console.WriteLine("Thanks for playing!");
+                break;
+            }
+
+            string hint = GetHint(guess);
+            Console.WriteLine(hint);
+        }
     }
 
+    /// <summary>
+    /// Provides a directional hint and trend relative to the previous guess.
+    /// First hint includes direction only; subsequent hints also include a
+    /// warmer/colder indicator based on distance to the secret.
+    /// </summary>
+    /// <param name="lastGuess">The most recent guess provided by the user.</param>
+    /// <returns>Human-readable hint such as "Warmer! Too low. Try higher.".</returns>
     private string GetHint(int lastGuess)
     {
-        // TODO: Students: implement with Cursor.
-        // PROMPT: Implement "warm/colder" logic: based on distance between lastGuess and _secret compared
-        // to previous distance (store previous in a field). On first guess, just say "higher"/"lower".
-        throw new NotImplementedException();
+        int currentDistance = Math.Abs(lastGuess - _secret);
+
+        if (!_previousDistance.HasValue)
+        {
+            _previousDistance = currentDistance;
+            return lastGuess < _secret ? "Too low. Try higher." : "Too high. Try lower.";
+        }
+
+        int previousDistance = _previousDistance.Value;
+        string trend;
+        if (currentDistance < previousDistance)
+        {
+            trend = "Warmer!";
+        }
+        else if (currentDistance > previousDistance)
+        {
+            trend = "Colder!";
+        }
+        else
+        {
+            trend = string.Empty;
+        }
+
+        _previousDistance = currentDistance;
+
+        string direction = lastGuess < _secret ? "Too low. Try higher." : "Too high. Try lower.";
+        return string.IsNullOrEmpty(trend) ? direction : $"{trend} {direction}";
     }
 }
