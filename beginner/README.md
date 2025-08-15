@@ -75,6 +75,19 @@ dotnet run   --project ./NumberGuess/NumberGuess.csproj --difficulty Normal
 - Score is computed; first-try is best; tests pass
 - Graceful handling of invalid input and `quit`
 
+Does it meet the AC?
+Game starts and accepts input with Easy/Normal/Hard ranges: Yes.
+--difficulty is parsed; ranges set to 1–50/1–100/1–500. Covered by CliTests.Cli_ValidDifficulty_ParsesAndDisplays and ProgramTests.ValidDifficulty_ShouldStartGame_AndPrintBanner.
+Warm/colder hints work after the first guess: Yes.
+Game.GetHint uses previous distance to emit “Warmer!”/“Colder!”. Verified by GameTests.Hints_ShouldReportTrendAndDirection.
+Score is computed; first-try is best; tests pass: Yes.
+Score printed on win; ScoreCalculator.Calculate ensures attempt count dominates and first-try best. Verified by ScoreCalculatorTests and ScoreCalculatorAdditionalTests. All tests passed.
+Graceful handling of invalid input and quit: Yes.
+Handles non-integer, out-of-range, EOF, and quit with friendly messages. Verified by GameTests.EOFInput_ShouldExitGracefully and GameTests.InvalidAndOutOfRange_Input_ShouldPrompt. CLI handles help/unknown args gracefully.
+Test status: 35 tests, 0 failures.
+Conclusion: The NumberGuess application meets all acceptance criteria.
+Built beginner/NumberGuess and ran beginner/NumberGuess.Tests. All 35 tests passed, confirming difficulty handling, hints, scoring, and graceful input handling.
+
 ## Closing: Ideate Enhancements with Cursor
 When your acceptance criteria are green, take 5–10 minutes to brainstorm **stretch features**.
 

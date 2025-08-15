@@ -1,0 +1,15 @@
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\bin\Debug\net8.0\NumberGuess.exe
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\bin\Debug\net8.0\NumberGuess.deps.json
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\bin\Debug\net8.0\NumberGuess.runtimeconfig.json
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\bin\Debug\net8.0\NumberGuess.dll
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\bin\Debug\net8.0\NumberGuess.pdb
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\obj\Debug\net8.0\NumberGuess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\obj\Debug\net8.0\NumberGuess.AssemblyInfoInputs.cache
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\obj\Debug\net8.0\NumberGuess.AssemblyInfo.cs
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\obj\Debug\net8.0\NumberGuess.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\obj\Debug\net8.0\NumberGuess.sourcelink.json
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\obj\Debug\net8.0\NumberGuess.dll
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\obj\Debug\net8.0\refint\NumberGuess.dll
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\obj\Debug\net8.0\NumberGuess.pdb
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\obj\Debug\net8.0\NumberGuess.genruntimeconfig.cache
+C:\Users\Nathan\source\repos\Classic-Games\beginner\NumberGuess\obj\Debug\net8.0\ref\NumberGuess.dll
