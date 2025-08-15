@@ -1,0 +1,12 @@
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\bin\Debug\net8.0\TicTacToe.Core.deps.json
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\bin\Debug\net8.0\TicTacToe.Core.dll
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\bin\Debug\net8.0\TicTacToe.Core.pdb
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\obj\Debug\net8.0\TicTacToe.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\obj\Debug\net8.0\TicTacToe.Core.AssemblyInfoInputs.cache
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\obj\Debug\net8.0\TicTacToe.Core.AssemblyInfo.cs
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\obj\Debug\net8.0\TicTacToe.Core.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\obj\Debug\net8.0\TicTacToe.Core.sourcelink.json
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\obj\Debug\net8.0\TicTacToe.Core.dll
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\obj\Debug\net8.0\refint\TicTacToe.Core.dll
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\obj\Debug\net8.0\TicTacToe.Core.pdb
+C:\Users\Nathan\source\repos\Classic-Games\intermediate\TicTacToe.Core\obj\Debug\net8.0\ref\TicTacToe.Core.dll

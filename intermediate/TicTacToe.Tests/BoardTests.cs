@@ -15,8 +15,14 @@ public class BoardTests
     [Fact]
     public void XCompletesRow_Wins()
     {
-        // PROMPT: Ask Cursor to make Apply(...) work immutably and then make this pass.
         // Arrange a sequence where X wins on top row.
-        // b = b.Apply(new Move(0,0,Cell.X)) ... etc.
+        var b = new Board();
+        b = b.Apply(new Move(0,0,Cell.X));
+        b = b.Apply(new Move(1,1,Cell.O));
+        b = b.Apply(new Move(0,1,Cell.X));
+        b = b.Apply(new Move(2,2,Cell.O));
+        b = b.Apply(new Move(0,2,Cell.X));
+
+        Assert.Equal(GameStatus.XWins, b.GetStatus());
     }
 }
